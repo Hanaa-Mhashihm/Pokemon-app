@@ -39,7 +39,7 @@ const RelatedPokemons = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {pokemonList.map((pokemon) => (
-            <Link href={`/pokemonInfo/${pokemon.pokemonId}`}>
+            <Link key = {pokemon.pokemonId} href={`/pokemonInfo/${pokemon.pokemonId}`}>
                 <div
                 key={pokemon.name}
                 className="bg-white rounded-md shadow-md overflow-hidden hover:shadow-lg transition duration-300"
